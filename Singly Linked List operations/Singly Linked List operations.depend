@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1601478317 source:e:\pj\singly linked list operations\main.c
+	<stdio.h>
+	<stdlib.h>
+
