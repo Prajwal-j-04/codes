@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1601305681 source:e:\pj\bst search\main.c
+	<stdio.h>
+	<stdlib.h>
+
