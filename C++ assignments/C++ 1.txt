@@ -1,0 +1,38 @@
+class vehicle
+{
+	public:
+	int reg num;
+	int year;
+	string colour;
+	
+};
+
+class car:: public vehicle
+{
+	public:
+	int reg num;
+	int year;
+	string colour;
+};
+
+class bike:: public vehicle
+{
+	public:
+	int reg num;
+	int year;
+	string colour;
+};
+
+int main()
+{
+car obj1;
+bike obj2;
+obj1.reg num= 2000;
+obj1.year= 1999;
+obj1.colour= 'Black';
+obj2.reg num= 2112;
+obj2.year= 1947;
+obj2.colour= 'Brown';
+return 0;
+}
+	

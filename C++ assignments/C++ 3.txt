@@ -1,0 +1,44 @@
+class vehicle
+{
+	public:
+	int reg num;
+	int year;
+	string colour;
+	virtual void settype()=0;
+};
+
+class car:: public vehicle
+{
+	public:
+	int reg num;
+	int year;
+	string colour;
+	void settype()
+	{ cout<< "4w";}
+};
+
+class bike:: public vehicle
+{
+	public:
+	int reg num;
+	int year;
+	string colour;
+	void settype()
+	{ cout<< "2w";}
+};
+
+int main()
+{
+car obj1;
+bike obj2;
+obj1.reg num= 2000;
+obj1.year= 1999;
+obj1.colour= 'Black';
+obj1.settype();
+obj2.reg num= 2112;
+obj2.year= 1947;
+obj2.colour= 'Brown';
+obj2.settype();
+return 0;
+}
+	

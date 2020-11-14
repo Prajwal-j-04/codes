@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+class complex
+{
+	float a;
+	float b;
+public:
+	complex()
+{
+	a=0;
+	b=0;
+}
+
+complex operator+(complex);
+friend istream &operator >>(istream &input, complex &t)
+{
+	cout<<"Enter the real part";
+	input>>.a;
+	cout<<"Enter the imaginary part";
+	input>>t.b;
+}
+friend ostream &operator <<(ostream &output, complex &t)
+{
+	output<<t.a<<"+"<<t.y<<"i";
+}
+};
+
+complex complex::operator+(complex c)
+{
+complex temp;
+temp.a=a+c.a;
+temp.b=b+c.b;
+return(temp);
+}
+
+int main()
+{
+complex c1,c2,c3;
+cout<<"Enter the 1st number";
+cin>>c1;
+cout<<"Enter the 2nd number";
+cin>>c2;
+c3=c1+c2;
+cout<<"The First number is ";
+cout<<c1;
+cout<<"The Second number is ";
+cout<<c2;
+cout<<"The sum is";
+cout<<c3;
+return 0;
+}
+
